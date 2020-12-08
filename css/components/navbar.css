@@ -1,0 +1,139 @@
+.navbar {
+    max-width: 1280px;
+    height: 80px;
+    display: flex;
+    position: sticky;
+}
+
+.navbar-wrapper {
+    border-bottom: 2px solid #e3e3e3;
+}
+
+.voestalpineLogo {
+    float: left;
+    height: 38px;
+    margin: 13px 15px 0;
+    display: block;
+}
+
+@media (min-width: 1024px) {
+    .navbar {
+        height: 105px;
+    }
+    .voestalpineLogo {
+        margin: 28px 0 0 -1px;
+        width: 238px;
+        height: 50px;
+    }
+
+    .navbar-items {
+        margin-left: 27px;
+        margin-top: 24px;
+    }
+    .navbar-list {
+        display: inline-block;
+        list-style: none;
+    }
+    .navbar-item {
+        cursor: pointer;
+        line-height: 18px;
+        float: left;
+    }
+    .navbar-item a {
+        padding: 15px 10px;
+        margin-left: 10px;
+        white-space: normal;
+        text-transform: uppercase;
+        color: #0082b4;
+        text-decoration: none;
+        font-weight: 300;
+    }
+    .navbar-item a:hover {
+        border-bottom: 4px solid #0082b4;
+        color: #333;
+    }
+
+    /**
+    * SEARCH
+    */
+
+    .search-icon svg {
+        width: 37px;
+        height: 37px;
+        fill: #e3e3e3;
+        margin-top: 28px;
+    }
+    .search-icon svg path {
+        fill: #333;
+    }
+    .search-icon:hover svg path {
+        fill: #0082b4;
+    }
+
+    .search-wrapper {
+        position: absolute;
+        top: 107px;
+        width: 100%;
+        min-width: 320px;
+        left: 0;
+        background: #fff;
+        height: 80px;
+        transition: top .25s;
+        box-shadow: 0 5px 10px 0 rgba(0,0,0,.15);
+    }
+
+    .search {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .search-input {
+        font-size: 32px;
+        background: 0 0;
+        color: #333;
+        text-align: left;
+        line-height: 38px;
+        outline: none;
+        border: none;
+        margin-left: 25px;
+    }
+
+    /**
+    * DROPDOWN
+    */
+    .language-dropdown {
+        position: relative;
+        display: inline-block;
+        margin-top: 40px;
+        margin-left: 40px;
+        color: #333;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+    }
+    .dropdown-content ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .dropdown-content ul li {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 11px 20px 12px 12px;
+        display: block;
+        color: #0082b4;
+        zoom: 1;
+    }
+    .dropdown-content ul li:hover {
+        text-decoration: underline;
+    }
+    .language-dropdown:hover .dropdown-content {
+        display: block;
+    }
+}
